@@ -1,0 +1,138 @@
+/* admin-redesign.css */
+/* Inspired by Apple and Tsinghua University official websites */
+
+/* Global settings */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f7;
+}
+
+/* Layout */
+.layui-layout-admin .layui-header {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: none;
+}
+
+.layui-layout-admin .layui-logo {
+    color: #1E9FFF !important;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    text-shadow: none;
+    width: 220px !important;
+}
+
+.layui-layout-admin .layui-header .layui-nav .layui-nav-item > a {
+    color: #555 !important;
+}
+
+.layui-layout-admin .layui-header .layui-nav .layui-nav-item > a:hover {
+    color: #1E9FFF !important;
+}
+
+.layui-side.layui-bg-black {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e0e0e0;
+    width: 220px !important;
+}
+
+.layuimini-menu-left {
+    width: 220px !important;
+}
+
+
+/* Hide unnecessary elements */
+.layuimini-tool, .layuimini-header-menu, .layuimini-tab-rollTool {
+    display: none !important;
+}
+
+/* Sidebar Menu */
+.layuimini-menu-left .layui-nav {
+    padding-top: 20px;
+}
+
+.layuimini-menu-left .layui-nav-item a {
+    color: #333 !important;
+    height: 50px;
+    line-height: 50px;
+}
+
+.layuimini-menu-left .layui-nav-item a:hover {
+    background-color: #f0f0f0 !important;
+    color: #1E9FFF !important;
+}
+
+.layuimini-menu-left .layui-nav .layui-nav-item a {
+    padding-left: 20px;
+}
+
+.layuimini-menu-left .layui-nav-itemed > .layui-nav-child {
+    background-color: transparent !important;
+}
+
+.layuimini-menu-left .layui-nav-child dd.layui-this a,
+.layuimini-menu-left .layui-nav-item.layui-this > a {
+    background-color: #e6f7ff !important;
+    color: #1E9FFF !important;
+    border-right: 3px solid #1E9FFF;
+}
+
+.layuimini-menu-left .layui-nav-child a {
+    padding-left: 40px !important;
+}
+
+
+/* Main content area */
+.layui-body {
+    background-color: #ffffff;
+    left: 220px !important;
+    top: 60px !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    overflow-y: auto;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 0; /* Let iframe handle padding */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.layui-body .layui-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+#layuiminiHomeTabIframe {
+    padding: 0;
+}
+
+/* Remove tab styles */
+.layui-tab {
+    margin: 0;
+    border: none;
+    height: 100%;
+}
+.layui-tab-title {
+    display: none !important;
+}
+
+.layui-tab-content {
+    padding: 0;
+    height: 100%;
+}
+
+.layui-tab-content .layui-tab-item {
+    height: 100%;
+}
+
+/* Center layui pop-ups */
+.layui-layer {
+    margin: 0 !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+} 
